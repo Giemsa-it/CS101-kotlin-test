@@ -14,6 +14,7 @@ fun main() {
 
     println("\n--------------------------------------")
     println("Part 1 Basics")
+
     // ---------------------- EXERCISE 1
     // No check here for this exercise. If you want to test it, run Part1Tests.
 
@@ -39,7 +40,7 @@ fun main() {
 
     // ---------------------- EXERCISE 6
     println("Exercise 6: Create a function to find the second largest number in a list.")
-    // println(Part1Basics.secondLargest(listOf(1, 2, 3, 4, 5)))
+    // println(Part1Basics.secondLargest(listOf(2, 1, 3, 4, 5)))
     // println("Expected output: 4")
 
     // ---------------------- EXERCISE 7
@@ -49,13 +50,14 @@ fun main() {
 
     // ---------------------- EXERCISE 8
     println("Exercise 8: Create a function to find the maximum value in a list.")
-    // println(Part1Basics.findMax(listOf(1, 2, 3, 4, 5)))
-    // println("Expected output: 5")
+    println(Part1Basics.findMax(listOf(1, 2, 3, 4, 5)))
+    println(Part1Basics.findMax(listOf(-1, -2, -3, -4, -5)))
+    println("Expected output: 5")
 
     // ---------------------- EXERCISE 9
     println("Exercise 9: Create a function to get the value for a given key from a map.")
-    // println(Part1Basics.getValue(mapOf("a" to 1, "b" to 2, "c" to 3), "b"))
-    // println("Expected output: 2")
+    println(Part1Basics.getValue(mapOf("a" to 1, "b" to 2, "c" to 3), "b"))
+    println("Expected output: 2")
 
     // ---------------------- EXERCISE 10
     println("Exercise 10: Create a function that calculates the area of a rectangle given its length and width.")
@@ -126,7 +128,7 @@ fun main() {
 
     // ---------------------- EXERCISE 6
     println("Exercise 6: Create a function that prints numbers from 1 to 10 with println(), but skips multiples of 3 using a loop.")
-    // Part2ConditionalLogic.printNumbersSkipMultiplesOf3()
+    Part2ConditionalLogic.printNumbersSkipMultiplesOf3()
     // Expected output:
     // 1
     // 2
@@ -183,31 +185,31 @@ fun main() {
 
     // ---------------------- EXERCISE 1
     println("Exercise 1: Create a Book class with title, author, and price. Add a displayDetails method.")
-    // val book = Part3ClassesAndObjects.Book("CS101 testing", "Ane", 10.0)
-    // book.displayDetails()
-    // println("Expected output: CS101 testing, Ane, 10.0")
+    val book = Part3ClassesAndObjects.Book("CS101 testing", "Ane", 10.0)
+    book.displayDetails()
+    println("Expected output: CS101 testing, Ane, 10.0")
 
     // ---------------------- EXERCISE 2
     println("Exercise 2: Create a Student class with name, age, and grades. Add methods to addGrade, averageGrade, and displayDetails.")
-    // val student = Part3ClassesAndObjects.Student("John Doe", 20)
-    // student.addGrade(90)
-    // student.addGrade(80)
-    // student.addGrade(70)
-    // println("Expected average grade: 80.0")
-    // student.displayDetails()
-    // println("Expected output: John Doe, 20, 80.0")
+    val student = Part3ClassesAndObjects.Student("John Doe", 20)
+    student.addGrade(90)
+    student.addGrade(80)
+    student.addGrade(70)
+     println("Expected average grade: 80.0")
+     student.displayDetails()
+     println("Expected output: John Doe, 20, 80.0")
 
     // ---------------------- EXERCISE 3
     println("Exercise 3: Create a BankAccount class with accountNumber, balance, and accountHolder. Add methods to deposit, withdraw, and displayDetails. Ensure balance cannot be negative.")
-    // val account = Part3ClassesAndObjects.BankAccount("12345", 1000.0, "Alice")
-    // account.deposit(500.0)
-    // println("Expected balance: 1500.0")
-    // account.withdraw(200.0)
-    // println("Expected balance: 1300.0")
-    // account.withdraw(2000.0)
-    // println("Expected balance after failed withdrawal: 1300.0")
-    // account.displayDetails()
-    // println("Expected output: 12345, 1300.0, Alice")
+     val account = Part3ClassesAndObjects.BankAccount("12345", 1000.0, "Alice")
+     account.deposit(500.0)
+     println("Expected balance: 1500.0")
+     account.withdraw(200.0)
+     println("Expected balance: 1300.0")
+     account.withdraw(2000.0)
+     println("Expected balance after failed withdrawal: 1300.0")
+     account.displayDetails()
+     println("Expected output: 12345, 1300.0, Alice")
 
     // ---------------------- EXERCISE 4
     println("Exercise 4: Create a Product class with name and price. Create a Shop class with a list of products. Add methods to addProduct, removeProduct, listProducts, totalValue, and filterProducts.")
@@ -233,16 +235,16 @@ fun main() {
 
     // ---------------------- EXERCISE 1
     println("Exercise 1: Create a base/open class called Appliance with brand, powerConsumption, and isOn. Add methods to turn on/off, and override toString.")
-    // val washingMachine = Part4InheritanceAndAccessModification.WashingMachine("LG", 2000)
-    // washingMachine.turnOn()
-    // println("Expected isOn: true")
-    // println(washingMachine)
-    // washingMachine.showFeatures() // Expected: WashingMachine: has a quick wash feature
-    // val refrigerator = Part4InheritanceAndAccessModification.Refrigerator("Samsung", 1500)
-    // refrigerator.turnOff()
-    // println("Expected isOn: false")
-    // println(refrigerator)
-    // refrigerator.showFeatures() // Expected: Refrigerator: has a frost-free feature
+    val washingMachine = Part4InheritanceAndAccessModification.WashingMachine("LG", 2000)
+     washingMachine.turnOn()
+     println("Expected isOn: true")
+     println(washingMachine)
+     washingMachine.showFeatures() // Expected: WashingMachine: has a quick wash feature
+     val refrigerator = Part4InheritanceAndAccessModification.Refrigerator("Samsung", 1500)
+     refrigerator.turnOff()
+     println("Expected isOn: false")
+     println(refrigerator)
+     refrigerator.showFeatures() // Expected: Refrigerator: has a frost-free feature
 
     // ---------------------- EXERCISE 2
     println("Exercise 2: Create a base class Employee with name, position, and salary. Derive Manager, Developer, and Intern with additional properties. Add work() methods.")
