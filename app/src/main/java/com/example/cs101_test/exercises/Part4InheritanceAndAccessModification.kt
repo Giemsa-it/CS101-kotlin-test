@@ -112,6 +112,7 @@ object Part4InheritanceAndAccessModification {
     }
 
 
+
     // ---------------------- EXERCISE 3
     // Create a class named Course to represent course information
     // Include the properties courseName and instructor
